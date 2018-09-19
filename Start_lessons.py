@@ -212,30 +212,48 @@
 #     print(i)
 
 
-# Question21
-import math
-l=list()
-x=0
-y=0
-while True:
-    s = input()
-    if not s:
-        break
-    l.append(s.split('\n'))
-    for i in l:
-        # print(type(i))
-        for j in i:
-            a = str(j).split(' ')
-            # print(a[0])
-    if(a[0]=='UP'): x+= int(a[1])
-    if(a[0]=='DOWN'): x-=int(a[1])
-    if (a[0] == 'RIGHT'): y += int(a[1])
-    if (a[0] == 'LEFT'): y -= int(a[1])
-    res = math.floor(math.sqrt(math.pow(x, 2)+math.pow(y, 2)))
-print(x)
-print(y)
-print(res)
-# print(l)
+# # Question21
+# import math
+# l=list()
+# x=0
+# y=0
+# while True:
+#     s = input()
+#     if not s:
+#         break
+#     l.append(s.split('\n'))
+#     for i in l:
+#         # print(type(i))
+#         for j in i:
+#             a = str(j).split(' ')
+#             # print(a[0])
+#     if(a[0]=='UP'): x+= int(a[1])
+#     if(a[0]=='DOWN'): x-=int(a[1])
+#     if (a[0] == 'RIGHT'): y += int(a[1])
+#     if (a[0] == 'LEFT'): y -= int(a[1])
+#     res = math.floor(math.sqrt(math.pow(x, 2)+math.pow(y, 2)))
+# print(x)
+# print(y)
+# print(res)
+
+# Question22
+str = input("Write a string").split(' ')
+print(str)
+words=dict()
+k=0
+s=set()
+for i in str:
+    s.add(i)
+    if(i in s):
+        k+=1
+words[i]=k
+print(s)
+print(words)
+
+
+
+
+
 
 
 
