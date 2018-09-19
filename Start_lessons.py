@@ -168,51 +168,37 @@
 #         pass
 # print("Amount: "+amount)
 
-# Question 18
-import re
-str1 = input("Write a password: ").split(",")
-l = list()
-res = 0
-for i in str1:
-   if(len(i)<6 and len(i)>12):
-       continue
-   else:
-       pass
-   # if not re.search("\d", i):
-   #     continue
-   # elif not re.search("[a-z]", i):
-   #     continue
-   # elif not re.search("[A-Z]", i):
-   #     continue
-   # elif not re.search("@|#|$", i):
-   #     continue
-   # else: pass
-   l.append(i)
-print(l)
-
-#
+# # Question 18
 # import re
-# value = []
-# items=[x for x in input().split(',')]
-# for p in items:
-#     if len(p)<6 or len(p)>12:
-#         continue
-#     else:
-#         pass
-#     if not re.search("[a-z]",p):
-#         continue
-#     elif not re.search("[0-9]",p):
-#         continue
-#     elif not re.search("[A-Z]",p):
-#         continue
-#     elif not re.search("[$#@]",p):
-#         continue
-#     elif re.search("\s",p):
-#         continue
-#     else:
-#         pass
-#     value.append(p)
-# print(",".join(value))
+# str1 = input("Write a password: ").split(",")
+# l = list()
+# res = 0
+# for i in str1:
+#    if(len(i)>6 and len(i)<12):
+#        if (re.search('[a-z]',i)) :
+#            res+=1
+#            if (re.search('[A-Z]',i)):res+=1
+#            if (re.search('\d',i)): res+=1
+#            if (re.search('[$#@]',i)):res+=1
+#            if(res==4): l.append(i)
+#            continue
+#    else:
+#        pass
+# print(l)
+
+
+# Question 19
+from operator import itemgetter, attrgetter
+tup = ()
+l = []
+while True:
+    s = input()
+    if not s:
+        break
+    l.append(tuple(s.split(',')))
+print(sorted(l, key=itemgetter(0, 1, 2)))
+
+
 
 
 
