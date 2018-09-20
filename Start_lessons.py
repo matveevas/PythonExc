@@ -252,7 +252,39 @@
 # print(words)
 
 
-# Question 23
+# # Question 23
+# def square(num):
+#     res = num**2
+#     return res
+# num=int(input('Write a number: '))
+# print('result: '+str(square(num)))
+
+# # Question 24
+# import os
+# print(abs.__doc__)
+# print(filter.__doc__)
+# print(map.__doc__)
+
+# # Question 25
+# class Dog:
+#     name='Dog'
+#     def __init__(self, name, kind):
+#         self.name = name
+#         self.kind=kind
+#
+# dg = Dog('Martin', 'no')
+# print(Dog.name +"  "+ dg.name)
+
+# # Question 26
+# def sum(a,b):
+#     sum =  a+b
+#     return sum
+# print(sum(3,4))
+
+# Question 27
+
+
+
 
 
 
