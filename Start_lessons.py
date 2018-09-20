@@ -236,19 +236,24 @@
 # print(y)
 # print(res)
 
-# Question22
-str = input("Write a string").split(' ')
-print(str)
-words=dict()
-k=0
-s=set()
-for i in str:
-    s.add(i)
-    if(i in s):
-        k+=1
-words[i]=k
-print(s)
-print(words)
+# # Question22
+# str = input("Write a string").split(' ')
+# # print(str)
+# words=dict()
+# k=0
+# s=set()
+# for i in str:
+#     s.add(i)
+#     words[i]=0
+# for i in str:
+#     if((i in s )== True):
+#         words[i] += 1
+# # print(s)
+# print(words)
+
+
+# Question 23
+
 
 
 
