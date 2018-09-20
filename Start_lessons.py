@@ -281,9 +281,50 @@
 #     return sum
 # print(sum(3,4))
 
-# Question 27
+# # Question 27
+# def itos(i):
+#     s=''
+#     s=str(i)
+#     print(s)
+# itos(5)
+
+# # Question 28
+# def sum(a,b):
+#     sum = int(a)+int(b)
+#     print(sum)
+#
+# st= input("Write string of numbers ").split(' ')
+# sum(st[0],st[1])
 
 
+# # Question 29
+# def concat(a,b):
+#     res = a+b
+#     print(res)
+#
+# st= input("Write string").split(' ')
+# concat(st[0],st[1])
+
+# # Question 30
+# s1 = input('Write string 1')
+# s2 = input('Write string 2')
+# print(max(len(s1), len(s2)))
+# if((len(s1)==len(s2))): print(s1+"\n"+s2)
+# elif((len(s1)>len(s2))):print(s1)
+# else: print(s2)
+
+# # Question 31 and 32, 33,34
+# def diction():
+#     d = dict()
+#     for i in range(1,4):
+#         d[i] = i**2
+#     print(d)
+#     for (k,v) in d.items():
+#             print(v)
+#             # print(k)
+# diction()
+
+# Question 35
 
 
 
