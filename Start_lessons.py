@@ -324,7 +324,47 @@
 #             # print(k)
 # diction()
 
-# Question 35
+# # # Question 35, 36, 37,38,39
+# def l():
+#     l=list()
+#     for i in range(1,21):
+#         l.append(i**2)
+#     # print all values from list
+#     # print(l)
+#     # print first 5 values from list
+#     # print(l[:5])
+#     # print last 5 values from list
+#     # print(l[-5:])
+# #     print all values except the first 5 elements in the list
+# #     print(l[5:])
+# create tuple from a list
+#     t=tuple(l)
+#     print(t)
+#
+# l()
+
+# #Question 40,41
+# tuple1=(1,2,3,4,5,6,7,8,9,10)
+# l1=list()
+# for i in tuple1:
+#     if(i%2==0):
+#         l1.append(i)
+# # even values in tuple
+# t1=tuple(l1)
+# print(t1)
+# # print first 5 and last 5 values
+# # print(tuple[0:5])
+# # print(tuple[5:])
+
+# # Question 42
+# s = input()
+# st = {'YES', 'yes', 'Yes','YEs','yES','yeS'}
+# if((s in st)==True):
+#     print('Yes')
+# else: print("No")
+
+
+# Question 43
 
 
 
