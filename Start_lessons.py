@@ -364,10 +364,77 @@
 # else: print("No")
 
 
-# Question 43
+# # Question 43
+# l = [1,2,3,4,5,6,7,8,9,10]
+# r = filter(lambda x: x % 2 == 0, l)
+# res = list(r)
+# print(res)
 
+# # Question 44
+# l = [1,2,3,4,5,6,7,8,9,10]
+# r = map(lambda x: x**2,l)
+# res =list(r)
+# print(res)
 
+# #Question 45
+# l = [1,2,3,4,5,6,7,8,9,10]
+# r = map(lambda x: x**2,filter(lambda x: x % 2 == 0, l))
+# res =list(r)
+# print(res)
 
+# # Question 46
+# l = [1,2,3,4,5,6,7,8,9,10,50, 24, 12,74]
+# r = filter(lambda x: x<20, filter(lambda x:x%2==0,l))
+# res =list(r)
+# print(res)
+
+# # Question 47, 48
+# class American:
+#     @staticmethod
+#     def printNationality():
+#         print('American')
+#
+# # am = American()
+# # am.printNationality()
+#
+# class NewYorker(American):
+#     pass
+# nyk = NewYorker()
+# print(nyk.printNationality())
+
+# # Question 49
+# class Circle():
+#     def calcares(self,radius):
+#         self.radius = radius
+#         rad = 3,14*radius**2
+#         return rad
+# circle = Circle()
+# print(circle.calcares(8))
+
+# # Question 49.1
+# class Circle():
+#     def __init__(self,rad):
+#         self.rad = rad
+#
+#     def calcrad(self):
+#         radius = 3,14*self.rad**2
+#         return radius
+# circle = Circle(8)
+# print(circle.calcrad())
+
+# # Question 50
+# class Rectangle(object):
+#     def __init__(self,l,w):
+#         self.l = l
+#         self.w = w
+#
+#     def area(self):
+#         area = self.w*self.l
+#         return(area)
+# rect = Rectangle(2,5)
+# print(rect.area())
+
+# Question 51
 
 
 
