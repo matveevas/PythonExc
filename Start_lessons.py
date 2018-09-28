@@ -434,12 +434,58 @@
 # rect = Rectangle(2,5)
 # print(rect.area())
 
-# Question 51
+# # Question 51
+# class Shape(object):
+#     def __init__(self):
+#         pass
+#
+#     def area(self):
+#         return 0
+#
+# class Square(Shape):
+#     def __init__(self, l):
+#         Shape.__init__(self)
+#         self.length = l
+#
+#     def area(self):
+#         return self.length*self.length
+#
+# aSquare= Square(3)
+# print(aSquare.area())
 
 
+# Question 52
+# try:
+#     res = 5%0
+# except :
+#     raise RuntimeError('Division by 0')
+
+#Question 53
+# def divis(a,b):
+#     return a%b
+# try:
+#     divis(5,0)
+# except:
+#     raise ZeroDivisionError('Change arguments of divis')
+
+# # Question 56, 57
+# s = input("Write an email: ").split('@')
+# username = s[0]
+# orgname = s[1].split('.')[0]
+# print(username)
+# print(orgname)
 
 
+# # Question 58
+# import re
+# s = input('Write a string:').split(' ')
+# l = list()
+# for i in s:
+#     m = re.findall('\d+', i)
+#     l.append(m)
+# print(l)
 
+# Question 59
 
 
 
