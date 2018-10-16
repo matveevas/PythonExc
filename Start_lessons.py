@@ -556,46 +556,26 @@
 # print(res)
 
 # Question 67
-# def bsearch(l, n):
-#     len1 = len(l)
-#     half = l[len1//2]
-#     if(n==half):
-#         print(l.index(half))
-#         return l.index(half)
-#     elif(n<half):
-#         print(l[:l.index(half)])
-#         bsearch(l[:l.index(half)],n)
+# def bsearch(l,n,low, high):
+#     half = l[(low + high) // 2]
+#     if (n == half):
+#         print("result " + str(l.index(half)))
+#     elif (n < half):
+#         high = l.index(half) - 1
+#         # print(l)
+#         bsearch(l, n, low, high)
 #     else:
-#         print(l[l.index(half):])
-#         bsearch(l[l.index(half):], n)
+#         low = l.index(half) + 1
+#         # print(l)
+#         bsearch(l, n, low, high)
+#
 # n = int(input())
-# l =[5,7,9,1,90,45,23,43,11,78,84,14]
+# l =[0,1,3,7,8,4,5,9,6,2]
 # l.sort()
-# # len1 = len(l)
-# # half = l[len1//2]
+# low = 0
+# high = len(l)-1
+# # half = l[(low+high)//2]
 # print(l)
-# print(bsearch(l,n))
-# # print(half)
-def bsearch(l,n,low, high):
-    half = l[(low + high) // 2]
-    if (n == half):
-        print("result " + str(l.index(half)))
-    elif (n < half):
-        high = l.index(half) - 1
-        # print(l)
-        bsearch(l, n, low, high)
-    else:
-        low = l.index(half) + 1
-        # print(l)
-        bsearch(l, n, low, high)
-
-n = int(input())
-l =[0,1,3,7,8,4,5,9,6,2]
-l.sort()
-low = 0
-high = len(l)-1
-# half = l[(low+high)//2]
-print(l)
-bsearch(l,n,low,high)
+# bsearch(l,n,low,high)
 
 
