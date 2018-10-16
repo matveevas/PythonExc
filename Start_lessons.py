@@ -485,9 +485,117 @@
 #     l.append(m)
 # print(l)
 
-# Question 59
+# # Question N
+# import random
+# l = list()
+# for i in range(0,96):
+#     r = random.uniform(0,1)
+#     l.append(r)
+#     print(r)
+# l1 = l.sort()
+# print(l1)
+
+# # Question 59
+# s = input()
+# s1 = u"s"
+# print(s1)
+
+# # Question 61
+# d = int(input())
+# sum = 0
+# for i in range(1,d+1):
+#     res = i / (i+1)
+#     sum += res
+# print(sum)
+
+# # Question 62
+# def f(n):
+#     if(n==0):
+#         return 0
+#     else:
+#         return f(n-1) + 100
+#
+# n=int(input())
+# print(f(n))
+
+#Question 63
+# def f(n):
+#     if(n==0):
+#         return 0
+#     elif(n==1):
+#         return 1
+#     else:
+#         return f(n-1)+f(n-2)
+# n = int(input())
+# l =list()
+# for i in range(0, n+1):
+#     l.append(i)
+# print(l)
+
+# Question 64
+# def generator(n):
+#     for i in range(0, n+1):
+#         if(i%5 ==0 and i%7==0):
+#             yield i
+# n = int(input())
+# generator(n)
+# res = []
+# for i in generator(n):
+#     res.append(str(i))
+# print(",".join(res))
 
 
+# Question 65
+# l=[2,4,6,8,9]
+# for i in l:
+#     assert(i%2==0),'Number is not even'
 
+#Question 66
+# n = input()
+# res = eval(n)
+# print(res)
+
+# Question 67
+# def bsearch(l, n):
+#     len1 = len(l)
+#     half = l[len1//2]
+#     if(n==half):
+#         print(l.index(half))
+#         return l.index(half)
+#     elif(n<half):
+#         print(l[:l.index(half)])
+#         bsearch(l[:l.index(half)],n)
+#     else:
+#         print(l[l.index(half):])
+#         bsearch(l[l.index(half):], n)
+# n = int(input())
+# l =[5,7,9,1,90,45,23,43,11,78,84,14]
+# l.sort()
+# # len1 = len(l)
+# # half = l[len1//2]
+# print(l)
+# print(bsearch(l,n))
+# # print(half)
+def bsearch(l,n,low, high):
+    half = l[(low + high) // 2]
+    if (n == half):
+        print("result " + str(l.index(half)))
+    elif (n < half):
+        high = l.index(half) - 1
+        # print(l)
+        bsearch(l, n, low, high)
+    else:
+        low = l.index(half) + 1
+        # print(l)
+        bsearch(l, n, low, high)
+
+n = int(input())
+l =[0,1,3,7,8,4,5,9,6,2]
+l.sort()
+low = 0
+high = len(l)-1
+# half = l[(low+high)//2]
+print(l)
+bsearch(l,n,low,high)
 
 
