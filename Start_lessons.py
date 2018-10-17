@@ -578,4 +578,66 @@
 # print(l)
 # bsearch(l,n,low,high)
 
+# Question 68
+# import random
+# print(random.uniform(1,100))
+# print(random.random()*100)
 
+
+# Question 69
+# import random
+# print(random.uniform(5,95))
+
+
+# Question 70
+# import random
+# print(random.choice([i for i in range(11) if i%2 ==0]))
+
+# Question 71
+# import random
+# print(random.choice([i for i in range(11) if i%2 ==0]))
+
+# Question 72
+# import random
+# print(random.sample(range(1,100),5))
+# # even numbers
+# print(random.sample([i for i in range(1,100) if i%2==0],5))
+# # number div 7 and 5
+# print(random.sample([i for i in range(1,201) if i%5==0 and i%7==0],5))
+
+
+# Question 73
+# import random
+# print(random.randrange(7,16))
+
+# Question 74
+# import timeit
+# t = timeit.Timer('1+1')
+# print(t.repeat(10))
+
+# Question 75
+# import random
+# l = [10,14,2,5,88,9,17,54,31,84,92,70,10,23]
+# random.shuffle(l)
+# print(l)
+# sl = [3,6,7,8]
+# random.shuffle(sl)
+# print(sl)
+
+#Question 76
+# subject =['I', 'You']
+# verb = ['play', 'love']
+# object = ['football', 'hockey']
+# for i in subject:
+#     for j in verb:
+#         for o in object:
+#             print(i+' '+' '+j+' '+o)
+
+# Question 77
+# l = [5,6,77,45,22,12,24]
+# res = [i for i in l if i%2==0]
+# print(res)
+
+# Question 78
+# l = [12,24,35,70,88,120,155]
+# nl = [i for i in l.index ]
