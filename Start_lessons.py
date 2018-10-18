@@ -657,3 +657,30 @@
 # # print(nl)
 
 #Question 82
+# l = [12,24,35,24,88,120,155]
+# for i in l:
+#     if(i==24):
+#         l.remove(i)
+# print(l)
+
+# Question 83
+# res = list()
+# l1 = [1,3,6,78,35,55]
+# l2 = [12,24,35,24,88,120,155, 55]
+# for i in l1:
+#     for j in l2:
+#         if(i==j):
+#             res.append(i)
+# print(res)
+#
+# set1 =set(l1)
+# set2 = set(l2)
+# res2 = list(set1&set2)
+# print(res2)
+
+# Question 84
+# l = [12,24,35,24,88,120,155,88,120,155]
+# s = set(l)
+# print(list(s))
+
+# Question 85
