@@ -640,4 +640,20 @@
 
 # Question 78
 # l = [12,24,35,70,88,120,155]
-# nl = [i for i in l.index ]
+# nl = [i for i in l if i%5!=0 and i%7!=0]
+# print(nl)
+
+# Question 79
+# l = [12,24,35,70,88,120,155]
+# res = [v for (i,v) in enumerate(l) if i%2==0]
+
+# # Question 80
+# l = [[[0 for g in range(8)]for j in range(5)] for i in range(3)]
+# print(l)
+
+#Question 81
+# l = [12,24,35,70,88,120,155]
+# # nl = [v for (i,v) in enumerate(l) if i not in (0,4,5)]
+# # print(nl)
+
+#Question 82
